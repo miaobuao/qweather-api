@@ -1,0 +1,38 @@
+from typing import Literal
+
+LangCodeType = Literal[
+    "zh-hans",
+    "zh",
+    "zh-hant",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "hi",
+    "th",
+    "ar",
+    "pt",
+    "bn",
+    "ms",
+    "nl",
+    "el",
+    "la",
+    "sv",
+    "id",
+    "pl",
+    "tr",
+    "cs",
+    "et",
+    "vi",
+    "fil",
+    "fi",
+    "he",
+    "is",
+    "nb",
+]
+
+UnitType = Literal["i", "m"]
