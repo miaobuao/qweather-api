@@ -1,0 +1,21 @@
+{
+  "python.analysis.typeCheckingMode": "standard",
+  "python.languageServer": "Pylance",
+  "editor.formatOnSave": true,
+  "python.analysis.indexing": true,
+  "python.analysis.autoImportCompletions": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "qweather"
+  ]
+}
