@@ -1,3 +1,5 @@
+from pydantic import SecretStr
+
 from qweather_api import QWeatherApiClient, QWeatherApiConfig, lookup_location_name
 
 # Lookup Location
@@ -9,7 +11,7 @@ client = QWeatherApiClient(
         api_host="https://xxx.re.qweatherapi.com",
         project_id="xxx",
         kid="xxx",
-        private_key="...",
+        private_key=SecretStr("..."),
         alg="EdDSA",
     )
 )

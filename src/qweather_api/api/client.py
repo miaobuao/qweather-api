@@ -35,7 +35,7 @@ class QWeatherApiClient:
         }
         encoded_jwt = jwt.encode(
             payload,
-            self.config.private_key,
+            self.config.private_key.get_secret_value(),
             algorithm=self.config.alg,
             headers=headers,
         )

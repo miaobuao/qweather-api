@@ -1,6 +1,6 @@
 from typing import Literal, Optional
 
-from pydantic import AnyHttpUrl, BaseModel, Field
+from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr
 
 
 class QWeatherApiConfig(BaseModel):
@@ -74,7 +74,7 @@ class QWeatherApiConfig(BaseModel):
         description=("JWT signing algorithm. QWeather requires the EdDSA algorithm."),
     )
 
-    private_key: str = Field(
+    private_key: SecretStr = Field(
         ...,
         description=(
             "EdDSA private key in PEM format used to sign the JWT. "
